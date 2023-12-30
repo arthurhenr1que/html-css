@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascaria</title>
+    <script src="https://kit.fontawesome.com/5791c24aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
@@ -14,10 +15,10 @@
 
         <!-- MENU -->
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Cardápio</a></li>
-            <li><a href="#">Galeria de Fotos</a></li>
-            <li><a href="#">Contato</a></li>     
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#galeria">Galeria de Fotos</a></li>
+            <li><a href="#contato">Contato</a></li>     
         </ul>
     </header>
 
@@ -33,7 +34,7 @@
 
         <!-- CARDÁPIO -->
         <section id="cardapio">
-            <h1>Cardápio</h1>
+            <h1><i class="fa-sharp fa-solid fa-utensils"></i> Cardápio</h1>
 
             <div class="container-divs">
                 <div class="caixa-cardapio">
@@ -67,33 +68,33 @@
 
         <!-- GALERIA DE FOTOS -->
         <section id="galeria">
-            <h1>Galeria de Fotos</h1>
+            <h1><i class="fa-regular fa-image"></i> Galeria de Fotos</h1>
 
-            <div class="container-divs">
-                <img src="imagens/1.jpg" alt="">
-                <img src="imagens/2.jpg" alt="">
-                <img src="imagens/3.jpg" alt="">
-                <img src="imagens/4.jpg" alt="">
-                <img src="imagens/5.jpg" alt="">
-                <img src="imagens/6.jpg" alt="">
-                <img src="imagens/7.jpg" alt="">
-                <img src="imagens/8.jpg" alt="">
+            <div class="container-imgs">
+                <img src="imagens/1.jpg" alt="Imagem 1" class="img-galeria">
+                <img src="imagens/2.jpg" alt="Imagem 2" class="img-galeria">
+                <img src="imagens/3.jpg" alt="Imagem 3" class="img-galeria">
+                <img src="imagens/4.jpg" alt="Imagem 4" class="img-galeria"><br>
+                <img src="imagens/5.jpg" alt="Imagem 5" class="img-galeria">
+                <img src="imagens/6.jpg" alt="Imagem 6" class="img-galeria">
+                <img src="imagens/7.jpg" alt="Imagem 7" class="img-galeria">
+                <img src="imagens/8.jpg" alt="Imagem 8" class="img-galeria">
             </div>
         </section>
 
         <!-- FALE CONOSCO -->
         <section id="contato">
-            <h1>Fale Conosco</h1>
+            <h1><i class="fa-regular fa-envelope"></i> Fale Conosco</h1>
             
-            <div class="container-divs">
+            <div class="container-divs-contato">
                 <div id="formulario">
-                    <form action="POST">
-                        <input type="text" name="nome" id="nome">
-                        <input type="email" name="email" id="email">
-                        <input type="text" name="assunto" id="assunto">
-                        <input type="text" name="msg" id="msg">
+                    <form action="" method="get" autocomplete="off" autocapitalize="on">
+                        <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                        <input type="text" name="assunto" id="assunto" placeholder="Assunto"><br>
+                        <input type="text" name="msg" id="msg" placeholder="Deixe sua mensagem"><br>
 
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="submit">
                     </form>
                 </div>
 
@@ -108,7 +109,10 @@
                     </ul>
 
                     <div id="icones">
-                        <p>Ícones</p>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
                     </div>
                 </div>
             </div>

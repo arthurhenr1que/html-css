@@ -18,14 +18,17 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: lightgray;
-}
+} 
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0% 10%;
+    justify-content: space-around;
+    padding: 0px 10px;
+    width: 100%;
+    position: fixed;
     background-color: white;
+    z-index: 1000;
 }
 
 header img {
@@ -154,4 +157,124 @@ div#sobremesas {
 div#bebidas {
     background: white url('../imagens/img-bebidas.jpg') center center no-repeat local;
     background-size: cover;
+}
+
+section#galeria {
+    padding: 4rem;
+    background-color: var(--fundo-galeria);
+    text-align: center;
+}
+
+.container-imgs {
+    margin-top: 40px;
+}
+
+.img-galeria {
+    border-radius: 5px;
+    width: 284px;
+    height: 189px;
+    margin: 10px;
+}
+
+section#contato {
+    padding: 4rem;
+    background-color: var(--fundo-contato);
+    color: white;
+}
+
+section#contato h1 {
+    color: white;
+}
+
+.container-divs-contato {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+form input {
+    border-radius: 5px;
+    width: 500px;
+    margin: 8px;
+    padding: 1rem;
+
+    color: #757575;
+    font-size: 18px;
+    border: none;
+}
+
+form input:focus {
+    border: 2px solid var(--laranja);
+    color: var(--laranja);
+    outline: none;
+}
+
+form input#submit {
+    border-radius: 3px;
+    margin-top: 15px;
+    width: 150px;
+
+    background-color: white;
+    font-size: 18px;
+}
+
+form input#submit:hover {
+    transition: all 0.5s;
+    background-color: var(--laranja);
+    color: white;
+    cursor: pointer;
+}
+
+div#info {
+    margin-left: 50px;
+    color: #6A6969;
+}
+
+div#info ul {
+    list-style: none;
+}
+
+div#info ul li {
+    margin-bottom: 5px;
+}
+
+div#icones {
+    margin-top: 30px;
+}
+
+div#icones a {
+    border-radius: 50%;
+    margin-right: 6px;
+    padding: 10px 15px;
+
+    background-color: var(--laranja);
+    color: white;
+}
+
+div#icones a:hover {
+    background-color: white;
+    border: 3px solid var(--laranja);
+    color: var(--laranja);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 9rem;
+    background-color: white;
+    color: var(--preto);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--laranja);
 }
