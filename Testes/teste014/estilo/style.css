@@ -1,1 +1,95 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    /* CORES */
+    --verde-claro: #8CC53E;
+    --verde-escuro: #119140;
+    --cinza-escuro: #676767;
+    --fundo-servicos: #E9ECF0;
+    --fundo-galeria: white;
+    --fundo-agenda: #EFEFEF;
+    --fundo-contato: white;
+    --fundo-rodape1: #8DC53F;
+    --fundo-rodape2: #7BB130;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--verde-claro);
+    font-size: 32px;
+}
+
+#titulo-principal {
+    text-transform: capitalize;
+    font-size: 88px;
+    letter-spacing: 13px;
+    text-shadow: 2px 1px 5px #535353;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px;
+    background-color: white;
+}
+
+header img {
+    width: 196px;
+    height: 95px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li a {
+    margin-right: 5px;
+    padding: 36px 15px;
+    text-decoration: none;
+    color: var(--cinza-escuro);
+}
+
+header ul li a:hover {
+    color: var(--verde-claro);
+    border-bottom: 5px solid var(--verde-claro);
+}
+
+section#inicio {
+    background: white url('../imagens/banner-home.jpg') center center local;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+section#inicio h2 {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 13px;
+}
+
